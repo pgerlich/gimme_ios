@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Gimme" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="3NS-H9-Zrm">
+                                <rect key="frame" x="20" y="80" width="560" height="296"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MWC-s5-beF">
+                                        <rect key="frame" x="160" y="0.0" width="240" height="128"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaL-yp-e0T">
+                                        <rect key="frame" x="0.0" y="140" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" placeholderIntrinsicWidth="560" placeholderIntrinsicHeight="30" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uqQ-ci-YCL">
+                                        <rect key="frame" x="0.0" y="182" width="560" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PA-O7-hhe">
+                                        <rect key="frame" x="261" y="224" width="38" height="30"/>
+                                        <state key="normal" title="Login"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5N-CO-0Qe">
+                                        <rect key="frame" x="252" y="266" width="57" height="30"/>
+                                        <state key="normal" title="Register"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="UaL-yp-e0T" firstAttribute="leading" secondItem="3NS-H9-Zrm" secondAttribute="leading" id="0Y8-Om-Fjm"/>
+                                    <constraint firstAttribute="trailing" secondItem="uqQ-ci-YCL" secondAttribute="trailing" id="FQq-nI-EOu"/>
+                                    <constraint firstAttribute="trailing" secondItem="UaL-yp-e0T" secondAttribute="trailing" constant="240" id="ISb-hi-P9n"/>
+                                    <constraint firstItem="UaL-yp-e0T" firstAttribute="leading" secondItem="3NS-H9-Zrm" secondAttribute="leading" id="M2N-zZ-7jE"/>
+                                    <constraint firstItem="uqQ-ci-YCL" firstAttribute="leading" secondItem="3NS-H9-Zrm" secondAttribute="leading" id="Osp-Da-6CT"/>
+                                    <constraint firstItem="uqQ-ci-YCL" firstAttribute="leading" secondItem="3NS-H9-Zrm" secondAttribute="leading" id="TI4-ac-zJS"/>
+                                    <constraint firstAttribute="trailing" secondItem="UaL-yp-e0T" secondAttribute="trailing" id="Yrx-md-81L"/>
+                                    <constraint firstAttribute="trailing" secondItem="uqQ-ci-YCL" secondAttribute="trailing" constant="241" id="wu7-TL-ueU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3NS-H9-Zrm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="BKj-IE-53j"/>
+                            <constraint firstItem="3NS-H9-Zrm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="I3n-Hd-fHB"/>
+                            <constraint firstItem="3NS-H9-Zrm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="M8u-Ee-DMI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3NS-H9-Zrm" secondAttribute="trailing" constant="160" id="jgt-c8-g0F"/>
+                            <constraint firstItem="3NS-H9-Zrm" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kz9-4J-KFT"/>
+                            <constraint firstItem="3NS-H9-Zrm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xwd-5W-GVB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31" y="140"/>
+        </scene>
+    </scenes>
+</document>
